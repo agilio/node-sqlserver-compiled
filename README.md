@@ -1,13 +1,15 @@
-# Compiled Node.js driver for SQL Server
+# Compiled SQL Server driver for 32-bit Node.js
 
-This package contains the result of compilation of the [node-sqlserver package](https://github.com/WindowsAzure/node-sqlserver) - technically, it is the result of `npm install node-sqlserver` on Windows x64.
+Important: **this will only work with 32-bit version of Node.js**.
 
-It is a convenience package as it doesn't require developer to have Python, Visual C++ and other dependencies installed.
+This package contains the compiled [node-sqlserver package](https://github.com/WindowsAzure/node-sqlserver). Technically, it is a result of `npm install node-sqlserver` on Windows.
+
+It is a convenience package as it doesn't require a developer's PC to have Python, Visual C++ etc. installed.
 
 Use it in a Node.js project by including this in the dependies section of `package.json`:
 
     "dependencies" : {
         // ...
-        "node-sqlserver": <git URL here (TODO)>,
+        "node-sqlserver": "https://github.com/agilio/node-sqlserver-compiled/tarball/master",
         // ...
     }
